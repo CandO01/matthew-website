@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.container1{
+    width: 100%;
+    background-color: #224aa0;
+    padding: 10px 50px;
+}
+.container1 .header{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.header .logoIcon{
+    height: 40px;
+    cursor: pointer;
+}
+.header .menu-bar ul{
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    cursor: pointer;
+}
+.header .menu-bar ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 15px;
+    margin-block: 18px;
+    color: #f4e9e9;
+    font-size: 12px;
+}
+.button1{
+    margin-block: 10px;  
+    margin-inline: 45px;
+    
+}
+.button1 .signup{
+    font-size: 12px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding-right: 10px;
+    transition: box-shadow 1s;
+    cursor: pointer;
+}
+.button1 .signup a{
+    text-decoration: none;
+    color: #f4e9e9;
+}
+.button1 .signup:hover{
+    padding-inline: 18px;
+    padding-block: 8px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px 0.8px #cdcdcd;
+}
+.button1 .login{
+    padding-inline: 18px;
+    padding-block: 8px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button1 .login a{
+    color: #f4e9e9;
+    text-decoration: none;
+}
+.button1 .login:hover{
+    background-color: #fff;
+    color: #224aa0;
+    border: 1px solid #224aa0;
+    /*box-shadow: right bottom whole body opacity color*/
+    box-shadow: 0px 2px 2px 0.7px #5465a9;
+}
+.section1{
+    display: flex;
+    padding-block: 50px;
+}
+.section1 .image2{
+    width: 350px;
+    height: 400px;
+    background-color: #111f3d;
+    border-radius: 8px;
+    margin-left: 390px;
+}
+.section1 .image2 .hello{
+    width: 100%;
+    padding: 80px 35px;
+   
+}
+.section1 .text h2{
+    color: #fff;
+    font-size: 30px;
+    width: 380px;
+    padding-bottom: 80px;
+}
+.section1 .text h2{
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+  
+    100% {
+      font-size: 300%;
+      margin-left: 25%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+.section1 .text .learn{
+    color: #f4e9e9;
+    font-size: 10.8px;
+    width: 300px;
+    margin-bottom: 30px;
+    font-weight: 100;
+    line-height: 18px;
+}
+.section1 .text .read{
+    padding-inline: 45px;
+    padding-block: 8px;
+    font-size: 10px;
+    color: #224aa0;
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+    font-weight: 500;
+    cursor: pointer;
+    transition: box-shadow 0.8s;
+}
+.section1 .text .read:hover{
+    background-color: #224aa0;
+    color: #fff;
+    /*box-shadow: left bottom whole body opacity color*/
+    box-shadow: 0px 0px 20px 0.8px #cdcdcd;
+}
+.container2{
+    display: flex;
+    background-color:  #fafafa;
+    width: 100%;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+.container2 .text1{
+    padding-top: 125px;
+    width: 450px;
+}
+.container2 .image3{
+    padding-left: 180px;
+}
+.container2 .text1 .Enhance, .lorem{
+    color: #224aa0;
+    padding-bottom: 30px;
+}
+.container3{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.container3 .conclaseAcade, 
+.conclaseAcade1, .conclaseAcade2{
+    width: 350px;
+    background-color: #fafafa;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 1px #cdcdcd;
+}
+.container3 .conclaseAcade1{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.container3 .conclaseAcade .box1,
+.container3 .conclaseAcade1 .box1,
+.container3 .conclaseAcade2 .box1{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 1.8px solid #224aa0;
+    top: -20px;
+    right: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.container3 .conclaseAcade .box1 .box2,
+.container3 .conclaseAcade1 .box1 .box2,
+.container3 .conclaseAcade2 .box1 .box2{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #224aa0;
+    top: 24px;
+    right: 18px;
+    border-radius: 10px;
+}
+.container3 .conclaseAcade .box1 .box2 .captureb,
+.container3 .conclaseAcade1 .box1 .box2 .captureb,
+.container3 .conclaseAcade2 .box1 .box2 .captureb{
+    width: 35px;
+   position: absolute;
+   padding-left: 2px;
+   padding-top: 1px;
+}
+.container3 .conclaseAcade .conclase,
+.container3 .conclaseAcade1 .conclase,
+.container3 .conclaseAcade2 .conclase{
+    padding-top: 100px;
+    padding-inline: 50px;
+    font-size: 18px;
+    width: 450px;
+    padding-bottom: 20px;
+}
+.container3 .conclaseAcade1 .conclase{
+    padding-inline: 60px;
+}
+.container3 .conclaseAcade2 .conclase{
+    padding-inline: 70px;
+}
+.container3 .conclaseAcade .dolorem,
+.container3 .conclaseAcade1 .dolorem,
+.container3 .conclaseAcade2 .dolorem{
+    padding-inline: 20px;
+    color: #224aa0;
+    line-height: 25px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+.container4{
+    margin-top: 60px;
+    margin-left: 92px;
+}
+.container4 .latestArticle{
+    
+    font-weight: 700;
+    font-size: 15px;
+}
+.container4 .buttontype{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    width: 100%;
+}
+.container4 .buttontype .btnAll{
+    padding-inline: 100px;
+    padding-block: 10px;
+    margin-right: 15px;
+    font-size: 10px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #224aa0;
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+.container4 .buttontype .btnAll:hover{
+    background-color: #fff;
+    color: #224aa0;
+    border: 1px solid #224aa0;
+}
+.container4 .buttontype .btnProduct{
+    padding-inline: 50px;
+    padding-block: 10px;
+    margin-right: 15px;
+    font-size: 15px;
+    color: #224aa0;
+    border-radius: 4px;
+    border: 1px solid #224aa0;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+}
+.container4 .buttontype .btnProduct:hover{
+    background-color:  #224aa0;
+    color: #fff;
+    box-shadow: 0px 2px 2px 0.7px #5465a9;
+   transform-style: preserve-3d;
+}
+.container4 .buttontype .btnDotNet,
+.container4 .buttontype .btnSqa{
+    padding-inline: 90px;
+    padding-block: 10px;
+    margin-right: 15px;
+    font-size: 15px;
+    color: #224aa0;
+    border-radius: 4px;
+    border: 1px solid #224aa0;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+}
+.container4 .buttontype .btnProduct:hover,
+.container4 .buttontype .btnDotNet:hover,
+.container4 .buttontype .btnSqa:hover,
+.container4 .buttontype .btnweb:hover{
+    background-color:  #224aa0;
+    color: #fff;
+    box-shadow: 0px 2px 2px 0.7px #acb2c7;
+}
+
+.container4 .buttontype .btnweb{
+    padding-inline: 90px;
+    padding-block: 10px;
+    margin-right: 15px;
+    font-size: 15px;
+    color: #224aa0;
+    border-radius: 4px;
+    border: 1px solid #224aa0;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+}
+.container5{
+    margin-top: 60px;
+    margin-left: 92px;
+    display: flex;
+    justify-content: space-between;
+}
+.container5 .selfie,
+.container5 .typingfinger,
+.container5 .prayinghand{
+   background-color: #fafafa;
+   width: 380px;
+   border-radius: 6px;
+}
+.container5 .selfie .womanselfie,
+.container5 .typingfinger .womanselfie,
+.container5 .prayinghand .womanselfie{
+    width: 380px;
+    padding-bottom: 40px;
+    border-radius: 6px;
+}
+.container5 .selfie .yourcity,
+.container5 .typingfinger .yourcity,
+.container5 .prayinghand .yourcity{
+    padding-inline: 35px;
+    padding-bottom: 40px;
+    font-weight: 800;
+    font-size: 14px;
+}
+.container5 .selfie .dolorsit,
+.container5 .typingfinger .dolorsit,
+.container5 .prayinghand .dolorsit{
+    padding-inline: 35px;
+    font-weight: 400;
+    font-size: 12px;
+}
+.container5 .selfie .readmore2,
+.container5 .typingfinger .readmore2,
+.container5 .prayinghand .readmore2{
+    padding-inline: 35px;
+    padding-top: 6px;
+    padding-bottom: 80px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #224aa0;
+    cursor: pointer;
+}
+.container5 .selfie .sqatime,
+.container5 .typingfinger .sqatime,
+.container5 .prayinghand .sqatime{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.container5 .selfie .sqatime .sqa3,
+.container5 .typingfinger .sqatime .sqa3,
+.container5 .prayinghand .sqatime .sqa3{
+    font-size: 12px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+.container5 .typingfinger.sqatime .sqa3{
+    padding-left: 20px;
+}
+.container5 .selfie .sqatime .timer,
+.container5 .typingfinger .sqatime .timer,
+.container5 .prayinghand .sqatime .timer{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+}
+.container5 .selfie .sqatime .timer .timesvg,
+.container5 .typingfinger .sqatime .timer .timesvg,
+.container5 .prayinghand .sqatime .timer .timesvg{
+    width: 25px;
+    height: 20px;
+}
+.container5 .selfie .sqatime .timer .oneminute,
+.container5 .typingfinger .sqatime .timer .oneminute,
+.container5 .prayinghand .sqatime .timer .oneminute{
+    font-size: 12px;
+}
+.container6{
+    display: flex;
+    margin-top: 50px;
+}
+.container6 .sycamore,
+.container6 .sevenup,
+.container6 .diarykitchen,
+.container6 .coding{
+    display: flex;
+    padding-left: 75px;
+    padding-top: 20px;
+}
+.container6 .sycamore .sycaretree{
+    width: 80px;
+    height: 80px;
+}
+.container6 .sycamore .sycamoreng{
+    padding-top: 30px;
+    font-weight: 900;
+}
+.container6 .sevenup{
+    margin-top: 30px;
+}
+.container6 .sevenup .sevenupimage{
+    height: 30px;
+    padding-right: 8px;
+    
+ }
+ .container6 .sevenup .sevenupcompany{
+    font-weight: 900;
+    width: 200px;
+}
+.container6 .diarykitchen{
+    margin-top: 30px;
+}
+.container6 .diarykitchen .kichenimg{
+    height: 30px;
+    padding-right: 8px;
+    margin-top: -6px;
+}
+.container6 .diarykitchen .kitchnlover{
+    font-weight: 900;
+    width: 200px;
+}
+/* atteyi coding*/
+
+.container6 .coding{
+    margin-top: 30px;
+    
+}
+.container6 .coding .attueyiAcademyimg{
+    height: 30px;
+    padding-right: 8px;
+    width: 60px;
+   height: 50px;
+   border-radius: 50%;
+   margin-top: -6px;
+}
+.container6 .coding .attueyicoding{
+    font-weight: 900;
+    width: 200px;
+}
+.container7{
+    width: 100%;
+    background-color: #224aa0;
+    color: #fff;
+    margin-top: 40px;
+    padding-bottom: 1px;
+}
+.container7 .stayupdated{
+   padding-top: 50px;
+   padding-left: 28%;
+   padding-bottom: 40px;
+   font-size: 55px;
+}
+.container7 .inputtext{
+   margin-left: 25%;
+   margin-bottom: 50px;
+   position: relative;
+   width: 55%;
+   padding-block: 22px;
+   padding-left: 12px;
+   border-radius: 12px;
+   border: 0;
+   outline: 0;
+    font-size: 18px;
+}
+.container7 .inputtext:hover{
+    background-color: aqua;
+ }
+.container7 .inputtext::placeholder{
+   margin-left: 2px;
+}
+.container7 .subscribe{
+    position: absolute;
+    right: 200px;
+    margin-top: 8px;
+    margin-right: 65px;
+    padding-inline: 20px;
+    padding-block: 14px;
+    border: 0;
+    background-color: #224aa0;
+    border-radius: 6px;
+    
+}
+.container7 .subscribe a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.container7 .checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4%;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+.container7 .checkbox .checked{
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    margin-left: 8%;
+}
+.container7 .checkbox .confirm{
+    font-size: 13px;
+   padding-left: 14px;
+}
+.container7 .checkbox .confirm span{
+    text-decoration: underline;
+}
+.container8{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
+.container8 .conclaseAcaBlog .candoblog{
+    color: #224aa0;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.container8 .conclaseAcaBlog .loremBlogdolor{
+    width: 380px;
+    color: #224aa0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.container8 .about ul,
+.container8 .platform2 ul{
+    margin-top: -40px; 
+}
+.container8 .resources1 ul{
+    margin-top: -10px; 
+}
+.container8 .about ul li,
+.container8 .resources1 ul li,
+.container8 .platform2 ul li{
+    list-style: none;
+    font-size: 14px;
+    color: #224aa0;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.container8 .about ul li:hover,
+.container8 .resources1 ul li:hover,
+.container8 .platform2 ul li:hover{
+    color: red;
+}
+.container8 .about ul li:nth-child(1),
+.container8 .resources1 ul li:nth-child(1),
+.container8 .platform2 ul li:nth-child(1){
+   color: #224aa0;
+   font-size: 15px;
+   font-weight: 600;
+}
+.container8 .icons{
+    display: flex;
+    margin-right: 48px;
+}
+.container8 .icons .twiiter,
+.container8 .icons .linkedin,
+.container8 .icons .facebook{
+    width: 25px;
+    height: 25px;
+    border: 1.8px solid #224aa0;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.container8 .icons .twiiter .iconify,
+.container8 .icons .linkedin .iconify,
+.container8 .icons .facebook .iconify{
+    height: 14px;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+.container8 .icons .linkedin{
+    margin-inline: 20px;
+}
