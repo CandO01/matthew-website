@@ -110,6 +110,7 @@ body{
     font-size: 14px;
 }
  .signup{
+     width: 100%
     text-align: center;
     padding-block: 15px;
     padding-inline: 200px;
